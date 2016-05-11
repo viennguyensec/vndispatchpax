@@ -8,6 +8,7 @@
         android:background="@mipmap/login_bg"
         android:focusable="true"
         android:focusableInTouchMode="true">
+
         <EditText
             style="@style/InputDefault"
             android:inputType="textPersonName"
@@ -42,10 +43,11 @@
         <EditText
             style="@style/InputDefault"
             android:id="@+id/signupConfirmPassword"
+            android:inputType="textPassword"
             android:hint="Confirm Password"
             android:layout_below="@+id/signupPassword" />
         <CheckBox
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/mainWidth"
             android:layout_height="wrap_content"
             android:text="I have read and agreed to the service terms and conditions"
             android:id="@+id/signupCBAgreeTerm"
@@ -61,16 +63,11 @@
             android:buttonTint="#fff"
             />
         <Button
-            android:layout_width="@dimen/inputWidth"
-            android:layout_height="59dp"
+            style="@style/MainButton"
+
             android:text="SIGN UP"
             android:id="@+id/btnSignUp"
-            android:layout_marginTop="13.5dp"
-            android:textSize="21dp"
-            android:textColor="#fff"
-            android:background="@drawable/btn_radius"
             android:layout_below="@+id/signupCBAgreeTerm"
-            android:layout_alignStart="@+id/signupFName"
             android:layout_marginBottom="40dp" />
 
         <Button

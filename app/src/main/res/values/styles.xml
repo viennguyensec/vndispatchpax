@@ -15,7 +15,7 @@
     </style>
 
     <style name = "InputDefault">
-        <item name="android:layout_width">@dimen/inputWidth</item>
+        <item name="android:layout_width">@dimen/mainWidth</item>
         <item name="android:layout_height">@dimen/inputHeight</item>
         <item name="android:background">@drawable/input_radius</item>
         <item name="android:textColor">@color/colorTextDark</item>
@@ -28,6 +28,24 @@
 
     <style name="SplashTheme" parent="NoActionBar">
         <item name="android:windowBackground">@mipmap/splash</item>
+    </style>
+
+    <style name="TextView" parent="NoActionBar">
+        <item name="android:textSize">@dimen/mainTextSize</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">@dimen/mainWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="MainButton" parent="NoActionBar">
+        <item name="android:layout_width">@dimen/mainWidth</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:layout_marginTop">13.5dp</item>
+        <item name="android:textSize">21dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@drawable/btn_radius</item>
+        <item name="android:layout_centerHorizontal">true</item>
     </style>
 
 

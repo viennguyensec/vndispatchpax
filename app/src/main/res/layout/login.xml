@@ -41,16 +41,13 @@
             android:layout_marginLeft="-7dp"
             android:buttonTint="#fff"/>
         <Button
-            android:layout_width="@dimen/inputWidth"
-            android:layout_height="59dp"
+            style="@style/MainButton"
             android:text="SIGN IN"
             android:id="@+id/btnSignIn"
             android:layout_marginTop="18dp"
-            android:textSize="21dp"
-            android:textColor="#fff"
             android:background="@drawable/btn_radius"
             android:layout_below="@+id/cbRememberMe"
-            android:layout_alignStart="@+id/inputPasswordLogin"/>
+            android:layout_alignStart="@+id/inputPasswordLogin" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -25,11 +25,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".views.activity.Login">
-        </activity>
-        <activity android:name=".views.activity.Signup">
-
-        </activity>
+        <activity android:name=".views.activity.Login"></activity>
+        <activity android:name=".views.activity.Signup"></activity>
+        <activity android:name=".views.activity.ForgotPassword"></activity>
     </application>
 
 </manifest>

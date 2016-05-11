@@ -2,6 +2,7 @@ package com.lv.vndispatchpax.views.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -12,33 +13,25 @@ import android.widget.Button;
 import com.lv.vndispatchpax.R;
 
 /**
- * Created by Administrator on 5/10/2016.
+ * Created by PC on 5/12/2016.
  */
-public class Login extends AppCompatActivity {
-    private Button btnSignIn;
-
+public class ForgotPassword extends AppCompatActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.forgot_password);
 
-        btnSignIn = (Button) findViewById(R.id.btnSignIn);
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
+        Typeface font = Typeface.createFromAsset(getAssets(), "fontawesome-webfont.ttf");
+        Button btnBackToSignIn = (Button) findViewById(R.id.btnBackToSignIn);
+        btnBackToSignIn.setTypeface(font);
+
+        btnBackToSignIn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
+                Intent backToSignIn = new Intent(ForgotPassword.this, Login.class);
+                ForgotPassword.this.startActivity(backToSignIn);
             }
         });
-    }
-
-    public void  toForgotPassword (View v) {
-        Intent toforgotPassword = new Intent(Login.this, ForgotPassword.class);
-        Login.this.startActivity(toforgotPassword);
-    }
-
-    public void toSignUp (View v) {
-        Intent toForgotPasswordViewIntent = new Intent(Login.this, Signup.class);
-        Login.this.startActivity(toForgotPasswordViewIntent);
     }
 
     @Override
@@ -49,4 +42,5 @@ public class Login extends AppCompatActivity {
         }
         return super.dispatchTouchEvent(ev);
     }
+
 }
