@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/login_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <EditText
+            style="@style/InputDefault"
+            android:inputType="textPersonName"
+            android:hint = "First name"
+            android:id="@+id/signupFName"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="98dp" />
+        <EditText
+            style="@style/InputDefault"
+            android:inputType="textPersonName"
+            android:hint = "Last name"
+            android:id="@+id/signupLName"
+            android:layout_below="@+id/signupFName"/>
+        <EditText
+            style="@style/InputDefault"
+            android:inputType="number"
+            android:id="@+id/signupPhone"
+            android:layout_below="@+id/signupLName"
+            android:hint="Phone Number"/>
+        <EditText
+            style="@style/InputDefault"
+            android:inputType="textEmailAddress"
+            android:id="@+id/signEmail"
+            android:hint="Email"
+            android:layout_below="@+id/signupPhone" />
+        <EditText
+            style="@style/InputDefault"
+            android:inputType="textPassword"
+            android:id="@+id/signupPassword"
+            android:layout_below="@+id/signEmail"
+            android:hint="Password"/>
+        <EditText
+            style="@style/InputDefault"
+            android:id="@+id/signupConfirmPassword"
+            android:hint="Confirm Password"
+            android:layout_below="@+id/signupPassword" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read and agreed to the service terms and conditions"
+            android:id="@+id/signupCBAgreeTerm"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:singleLine="false"
+            android:layout_marginTop="13.5dp"
+            android:layout_below="@+id/signupConfirmPassword"
+            android:layout_alignStart="@+id/signupFName"
+            android:layout_marginLeft="-7dp"
+            android:buttonTint="#fff"
+            />
+        <Button
+            android:layout_width="@dimen/inputWidth"
+            android:layout_height="59dp"
+            android:text="SIGN UP"
+            android:id="@+id/btnSignUp"
+            android:layout_marginTop="13.5dp"
+            android:textSize="21dp"
+            android:textColor="#fff"
+            android:background="@drawable/btn_radius"
+            android:layout_below="@+id/signupCBAgreeTerm"
+            android:layout_alignStart="@+id/signupFName"
+            android:layout_marginBottom="40dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_chevron_left"
+            android:id="@+id/btnBackToSignIn"
+            android:layout_marginTop="25dp"
+            android:textSize="17dp"
+            android:background="@color/colorTransparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/signupFName"
+            android:textColor="#fff"
+            android:layout_marginLeft="-10dp"/>
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
