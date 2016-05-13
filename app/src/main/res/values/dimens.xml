@@ -5,4 +5,5 @@
     <dimen name="inputPaddingStart">18dp</dimen>
     <dimen name="inputTextSize">17dp</dimen>
     <dimen name="mainTextSize">17dp</dimen>
+    <dimen name="actionBarSize">47dp</dimen>
 </resources>

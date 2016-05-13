@@ -26,9 +26,11 @@ public class Login extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent toHome = new Intent(Login.this, Home.class);
+                Login.this.startActivity(toHome);
             }
         });
+
     }
 
     public void  toForgotPassword (View v) {

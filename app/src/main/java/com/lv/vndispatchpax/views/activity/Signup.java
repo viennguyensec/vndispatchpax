@@ -32,6 +32,15 @@ public class Signup extends AppCompatActivity {
                 Signup.this.startActivity(backToSignIn);
             }
         });
+
+        Button btnSignup = (Button) findViewById(R.id.btnSignUp);
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toHome = new Intent(Signup.this, Home.class);
+                Signup.this.startActivity(toHome);
+            }
+        });
     }
 
     @Override
